@@ -1,18 +1,20 @@
-# This is standard CRA bootstrapp
+# This is standard CRA
 
-To install and run repository, run
+To install and run
 ```
 yarn
 ```
-followed by 
+
+Followed by 
 ```
 yarn start
 ```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 There is missing css, error handling for responses other than 200 and possibly some edge cases.
 
-Everything is in one file App.tsx, as a next step I will possibly extract bits to smaller components and separate files/folders.
+Everything is in one file App.tsx, as a next step I would extract bits to smaller components and separate files/folders. From there app can be extended with functionalities and cases.
 
 
 
