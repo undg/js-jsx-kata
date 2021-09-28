@@ -1,0 +1,17 @@
+node_modules/
+
+Session.vim
+*.swa
+*.swo
+*.swp
+.tern-port
+
+*.log
+npm-debug.log*
+
+
+.idea/
+*.iml
+.npm
+.env
+.DS_Store
