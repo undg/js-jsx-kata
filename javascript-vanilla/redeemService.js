@@ -1,9 +1,9 @@
-const { eligibilityServiceOutput, reward } = require('./constants')
+import { eligibilityServiceOutput, reward } from './constants.js'
 /**
  * @param {{ customerAccountNumber: number, portfolio: {channel: string, reward: string}[], eligibilityService:(customerAccountNumber: number)=>string }}
  * @returns {{ data: [] } | {code: number, message: string}}
  */
-function rewardsService({ customerAccountNumber, portfolio, eligibilityService }) {
+export function rewardsService({ customerAccountNumber, portfolio, eligibilityService }) {
     const res = eligibilityService(customerAccountNumber)
     if (res === eligibilityServiceOutput.CUSTOMER_ELIGIBLE)
         return { data: portfolio.filter(el => el.reward !== reward.NA).map(el => el.reward) }
@@ -17,4 +17,3 @@ function rewardsService({ customerAccountNumber, portfolio, eligibilityService }
     return { code: 0 }
 }
 
-module.exports.rewardsService = rewardsService

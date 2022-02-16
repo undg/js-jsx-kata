@@ -1,6 +1,6 @@
-const expect = require('chai').expect
-const { rewardsService } = require('./redeemService')
-const { eligibilityServiceOutput, reward, subscriptions } = require('./constants')
+import { expect } from 'chai'
+import { rewardsService }  from './redeemService.js'
+import { eligibilityServiceOutput, reward, subscriptions }  from './constants.js'
 
 describe('rewardsService()', () => {
     const customerAccountNumber = 1

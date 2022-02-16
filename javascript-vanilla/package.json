@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.2"
